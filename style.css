@@ -26,7 +26,7 @@ nav a:hover, .text-link:hover { color: var(--green-bright); }
 .nav-cta { border: 1px solid rgba(184, 215, 160, .55); border-radius: 4px; padding: 10px 15px; color: var(--green-bright); }
 .hero { min-height: min(760px, calc(100vh - 82px)); position: relative; display: flex; align-items: center; overflow: hidden; background: #101c14; }
 .hero-image, .hero-shade { position: absolute; inset: 0; }
-.hero-image { background: radial-gradient(ellipse at 72% 38%, rgba(70, 102, 61, .34), transparent 42%), linear-gradient(125deg, #101c14 0%, #17271b 55%, #0b110e 100%); opacity: 1; }
+.hero-image { background: url('golfbana.jpg') center 48% / cover no-repeat; opacity: .75; }
 .hero-shade { background: linear-gradient(90deg, rgba(7, 13, 9, .96) 0%, rgba(7, 13, 9, .84) 37%, rgba(7, 13, 9, .32) 74%, rgba(7, 13, 9, .2) 100%), linear-gradient(0deg, rgba(7, 13, 9, .45), transparent 50%); }
 .hero-content { position: relative; z-index: 1; max-width: 720px; padding: 100px max(7vw, calc((100vw - var(--max))/2)); padding-right: 0; }
 .eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .19em; color: var(--green); margin: 0 0 19px; }
@@ -65,10 +65,10 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .result-card h3 { font-size: 1.15rem; letter-spacing: -.02em; margin-bottom: 11px; }
 .result-card p { color: var(--muted); font-size: .88rem; margin: 0; }
 .result-line { width: 45px; height: 2px; background: var(--green); margin-top: auto; padding-top: 0; }
-.feature-band { display: block; background: radial-gradient(ellipse at 80% 20%, rgba(70, 102, 61, .2), transparent 45%), #111c14; }
+.feature-band { display: grid; grid-template-columns: 1fr 1fr; background: #111c14; }
 .feature-photo { min-height: 500px; }
 .feature-photo img { width: 100%; height: 100%; min-height: 500px; object-fit: cover; }
-.feature-copy { align-self: center; padding: 85px max(28px, calc((100vw - var(--max))/2)); max-width: 900px; margin: 0 auto; }\n.feature-copy-full { max-width: var(--max); }
+.feature-copy { align-self: center; padding: 75px clamp(35px, 7vw, 110px); max-width: 720px; }
 .feature-copy h2 { font-size: clamp(2.5rem, 4.7vw, 4.1rem); }
 .support { padding-bottom: 110px; }
 .support-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 8vw, 100px); align-items: start; }
