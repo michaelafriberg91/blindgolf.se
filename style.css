@@ -135,3 +135,58 @@ footer p { margin: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+
+/* Tillägg för golfbild, resultatlista och Swish-QR-kod */
+.hero-photo {
+  display: block;
+  width: min(100%, 680px);
+  max-height: 360px;
+  margin: 1.2rem 0 1.5rem;
+  object-fit: cover;
+  object-position: center 55%;
+  border-radius: 4px;
+}
+.tournament-results {
+  max-width: 820px;
+  color: #d4ddd4;
+}
+.tournament-results > p {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+.tournament-results h3 {
+  margin: 2.5rem 0 1rem;
+  color: var(--accent);
+  font-size: .78rem;
+  letter-spacing: .16em;
+}
+.result-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.result-item h4 {
+  margin: 0 0 .25rem;
+  color: var(--white);
+  font-size: 1.08rem;
+}
+.result-item p {
+  margin: 0;
+  color: #c5d0c6;
+}
+.swish-qr {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+}
+@media (max-width: 640px) {
+  .hero-photo {
+    max-height: 260px;
+    margin: 1rem 0 1.25rem;
+  }
+  .swish-qr {
+    width: min(100%, 280px);
+  }
+}
